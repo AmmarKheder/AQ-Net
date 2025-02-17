@@ -33,3 +33,17 @@ The project focuses on PM2.5 analysis using data collected in northern China bet
 ---
 
 ## Project Structure
+AQ-Net/                         <– Root directory
+├── LICENSE                     <– MIT License file
+├── README.md                   <– This file
+├── requirements.txt            <– Python package dependencies
+├── main.py                     <– Main script to run the entire pipeline
+├── data/                       <– Data directory (include CSV files here)
+│   └── sorted_air_quality_data_with_regions.csv
+└── src/                        <– Source code directory
+├── init.py             <– Package initialization
+├── data_preprocessing.py   <– Data loading and preprocessing functions
+├── dataset.py              <– PyTorch Dataset definition
+├── model.py                <– Model definition (LSTM + Attention)
+├── training.py             <– Training and evaluation functions
+└── knn_interpolation.py    <– KNN interpolation and post-processing functions
