@@ -47,3 +47,28 @@ AQ-Net/                         <– Root directory
 ├── model.py                <– Model definition (LSTM + Attention)
 ├── training.py             <– Training and evaluation functions
 └── knn_interpolation.py    <– KNN interpolation and post-processing functions
+
+---
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/AmmarKheder/AQ-Net.git
+   cd AQ-Net
+2. **Install dependencies:**
+   pip install -r requirements.txt
+
+3. **Usage**
+Run the main script to execute the entire pipeline:
+  python main.py
+This will:
+	1.	Load and preprocess the data (filtering, normalization, etc.).
+	2.	Split the dataset into training, validation, and test sets.
+	3.	Create PyTorch datasets and data loaders.
+	4.	Define and train the AQ-Net model (LSTM + Attention + neural kNN).
+	5.	Evaluate the model (MAE, RMSE, R²).
+	6.	Visualize spatial predictions for unobserved stations.
+
+
