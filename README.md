@@ -35,7 +35,7 @@ The project focuses on PM2.5 analysis using data collected in northern China bet
 
 ---
 
-#Overall Architecture
+**Overall Architecture**
     ![Description de l'image](img/archi.png)
 
 ---
