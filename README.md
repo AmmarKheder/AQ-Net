@@ -25,7 +25,6 @@ The project focuses on PM2.5 analysis using data collected in northern China bet
   - **LSTM-Multi-Head Attention:** Captures long-term temporal dependencies and selectively weights critical time steps.
   - **Cyclic Encoding (CE):** Projects time-related features into a continuous 2D sinusoid space to avoid discontinuities.
   - **Neural kNN Interpolation:** Fills spatial gaps by interpolating features from observed stations to unobserved ones.
-    ![Description de l'image](img/archi.png)
 
 
 - **Robust Reanalysis:**  
@@ -36,21 +35,8 @@ The project focuses on PM2.5 analysis using data collected in northern China bet
 
 ---
 
-## Project Structure
-AQ-Net/                         <– Root directory
-├── LICENSE                     <– MIT License file
-├── README.md                   <– This file
-├── requirements.txt            <– Python package dependencies
-├── main.py                     <– Main script to run the entire pipeline
-├── data/                       <– Data directory (include CSV files here)
-│   └── sorted_air_quality_data_with_regions.csv
-└── src/                        <– Source code directory
-├── init.py             <– Package initialization
-├── data_preprocessing.py   <– Data loading and preprocessing functions
-├── dataset.py              <– PyTorch Dataset definition
-├── model.py                <– Model definition (LSTM + Attention)
-├── training.py             <– Training and evaluation functions
-└── knn_interpolation.py    <– KNN interpolation and post-processing functions
+## Overall Architecture
+    ![Description de l'image](img/archi.png)
 
 ---
 
