@@ -14,7 +14,7 @@
 AQ-Net is a deep learning-based model designed for air quality reanalysis in both spatial and temporal domains. The model leverages an LSTM combined with multi-head attention to capture temporal dependencies, while a neural kNN module provides spatial interpolation for unobserved monitoring stations. An innovative cyclic encoding (CE) technique is also introduced to ensure continuous time representation, overcoming issues with discrete time boundaries.
 
 The project focuses on PM2.5 analysis using data collected in northern China between 2013 and 2017. Extensive experiments have demonstrated that AQ-Net is robust in capturing both short-term (6-24 hours) and long-term (up to 7 days) pollutant trends, making it a valuable tool for environmental reanalysis, public health alerts, and policy decisions.
-
+![Description de l'image](img/PM2.5_Predicted_Upscaled_Map.png)
 ---
 
 ## Key Features
