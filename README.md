@@ -25,7 +25,8 @@ The project focuses on PM2.5 analysis using data collected in northern China bet
   - **LSTM-Multi-Head Attention:** Captures long-term temporal dependencies and selectively weights critical time steps.
   - **Cyclic Encoding (CE):** Projects time-related features into a continuous 2D sinusoid space to avoid discontinuities.
   - **Neural kNN Interpolation:** Fills spatial gaps by interpolating features from observed stations to unobserved ones.
-
+**Cyclic Encoding**
+    ![Description de l'image](img/cyclic_encoding.gif)
 
 - **Robust Reanalysis:**  
   Designed to reconstruct historical air pollution levels even in regions with sparse sensor coverage, ensuring both spatial and temporal consistency.
