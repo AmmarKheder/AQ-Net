@@ -16,11 +16,6 @@ def load_and_preprocess_data(data_path):
     data['day_of_week'] = data['date'].dt.dayofweek
     pollutant_columns = ['CO (mg/m3)', 'NO2 (μg/m3)', 'O3 (μg/m3)', 'PM10 (μg/m3)', 'PM2.5 (μg/m3)', 'SO2 (μg/m3)']
     data = data.loc[(data[pollutant_columns] > 0).all(axis=1)].reset_index(drop=True)
-    percentile_95 = data[pollutant_columns].quantile(0.95)
-    data = data[(data[pollutant_columns] <= percentile_95).all(axis=1)].reset_index(drop=True)
-    start_date = "2016-01-01 00:00:00"
-    end_date = "2016-08-25 23:00:00"
-    data = data[(data['date'] >= start_date) & (data['date'] <= end_date)].reset_index(drop=True)
     data['hour_sin'] = np.sin(2 * np.pi * data['hour'] / 24)
     data['hour_cos'] = np.cos(2 * np.pi * data['hour'] / 24)
     data['month_sin'] = np.sin(2 * np.pi * data['month'] / 12)
