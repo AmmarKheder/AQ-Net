@@ -11,15 +11,8 @@
 ## Spatial Reanalysis of PM2.5 Levels Across China
 
 ![Description de l'image](img/mapc.png)
-This map shows the reanalysis of PM2.5 levels across
-all stations used in our study, whether visible or hidden.
-The color indicates the PM2.5 concentration (from dark
-purple for low values to yellow for high values), and the
-size of the circles reflects the relative measured intensity.
-The zoom on the Beijing area highlights a crucial aspect:
-some stations are extremely close to each other.
----
 
+This map shows the reanalysis of PM2.5 levels across all stations used in our study, whether visible or hidden. The color indicates the PM2.5 concentration (from dark purple for low values to yellow for high values), and the size of the circles reflects the relative measured intensity. The zoom on the Beijing area highlights a crucial aspect: some stations are extremely close to each other.
 ## Overview
 
 **AQ-Net** is a deep learning-based model designed for air quality reanalysis in both spatial and temporal domains.  
