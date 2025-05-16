@@ -8,7 +8,8 @@
 - Atmospheric Modelling Centre Lahti, Lahti University Campus  
 - University of Helsinki  
 - Chinese Academy of Sciences
-  
+## Spatial Reanalysis of PM2.5 Levels Across China
+
 ![Description de l'image](img/mapc.png)
 ---
 
@@ -22,7 +23,6 @@ An innovative **Cyclic Encoding (CE)** technique is also introduced to ensure co
 
 The project focuses on **PM2.5 analysis using data collected in northern China (2013–2017)**.  
 Extensive experiments have demonstrated that AQ-Net is robust in capturing both **short-term (6–24 hours)** and **long-term (up to 7 days)** pollutant trends, making it a valuable tool for environmental reanalysis, public health alerts, and policy decisions.
-
 ![Description de l'image](img/mapB.png)
 
 ---
