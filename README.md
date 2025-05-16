@@ -44,7 +44,7 @@ Extensive experiments have demonstrated that AQ-Net is robust in capturing both 
 
 ## Overall Architecture
 
-![Description de l'image](img/Artboard 11.jpg)
+![Description de l'image](img/Artboard11.jpg)
 ---
 
 ## Installation
