@@ -8,7 +8,8 @@
 - Atmospheric Modelling Centre Lahti, Lahti University Campus  
 - University of Helsinki  
 - Chinese Academy of Sciences
-
+  
+![Description de l'image](img/mapc.png)
 ---
 
 ## Overview
