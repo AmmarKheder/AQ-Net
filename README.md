@@ -25,7 +25,6 @@
 ## 🗺 Spatial Reanalysis of PM2.5 Across China
 
 <p align="center">
-  <img src="img/mapc.png" alt="China-wide Reanalysis Map" width="49%"/>
   <img src="img/mapC.gif" alt="Beijing Zoomed View" width="49%"/>
 </p>
 
