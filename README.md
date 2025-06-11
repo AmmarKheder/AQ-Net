@@ -1,7 +1,7 @@
 # AQ-Net: Deep Spatio-Temporal Neural Network for Air Quality Reanalysis  
 📄 *Accepted at SCIA 2025*  
 🔗 [arXiv:2502.11941](https://arxiv.org/abs/2502.11941)
-
+![Poster](img/poster SCIA 2025V.pdf)
 **Author:** Ammar Kheder  
 **Affiliations:**  
 - Lappeenranta–Lahti University of Technology (LUT)  
