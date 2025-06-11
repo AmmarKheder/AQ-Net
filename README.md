@@ -1,8 +1,8 @@
-# AQ-Net: Deep Spatio-Temporal Neural Network for Air Quality Reanalysis  
+## 📌 AQ-Net: Deep Spatio-Temporal Neural Network for Air Quality Reanalysis
 📄 *Accepted at SCIA 2025*  
-🔗 [arXiv:2502.11941](https://arxiv.org/abs/2502.11941)
-## 🧠 Poster AQ-Net (SCIA 2025)
-[![Poster](img/poster-preview.png)](img/poster%20SCIA%202025V.pdf)  
+🔗 [arXiv:2502.11941](https://arxiv.org/abs/2502.11941)  
+📄 [poster](img/poster%20SCIA%202025V.pdf)
+[![Poster AQ-Net](img/posterSCIA2025V.png)](img/poster%20SCIA%202025V.pdf)
 
 
 **Author:** Ammar Kheder  
