@@ -1,75 +1,91 @@
-## 📌 AQ-Net: Deep Spatio-Temporal Neural Network for Air Quality Reanalysis
-📄 *Accepted at SCIA 2025*  
-🔗 [arXiv:2502.11941](https://arxiv.org/abs/2502.11941)  
-📄 [poster](img/poster%20SCIA%202025V.pdf)
-[![Poster AQ-Net](img/posterSCIA2025V.png)](img/poster%20SCIA%202025V.pdf)
+<h1 align="center">🌫 AQ-Net: Deep Spatio-Temporal Neural Network for Air Quality Reanalysis</h1>
 
+<p align="center">
+📄 <strong>Accepted at SCIA 2025</strong> • 🔗 <a href="https://arxiv.org/abs/2502.11941">arXiv:2502.11941</a> • 📌 <a href="img/poster%20SCIA%202025V.pdf">Poster (PDF)</a>  
+</p>
 
-**Author:** Ammar Kheder  
-**Affiliations:**  
+<p align="center">
+  <a href="img/poster%20SCIA%202025V.pdf">
+    <img src="img/posterSCIA2025V.png" alt="AQ-Net Poster Preview" width="70%"/>
+  </a>
+</p>
+
+---
+
+## 👤 Author & Affiliations
+
+**Ammar Kheder**  
 - Lappeenranta–Lahti University of Technology (LUT)  
 - Atmospheric Modelling Centre Lahti, Lahti University Campus  
 - University of Helsinki  
 - Chinese Academy of Sciences
-## Spatial Reanalysis of PM2.5 Levels Across China
-
-![Description de l'image](img/mapc.png)
- ![m](img/mapC.gif)  
-This map shows the reanalysis of PM2.5 levels across all stations used in our study, whether visible or hidden. The color indicates the PM2.5 concentration (from dark purple for low values to yellow for high values), and the size of the circles reflects the relative measured intensity. The zoom on the Beijing area highlights a crucial aspect: some stations are extremely close to each other.
-## Overview
-
-**AQ-Net** is a deep learning-based model designed for air quality reanalysis in both spatial and temporal domains.  
-Accepted at **SCIA 2025**, the paper is now publicly available on [arXiv](https://arxiv.org/abs/2502.11941).
-
-The model leverages an **LSTM combined with multi-head attention** to capture temporal dependencies, while a **neural kNN module** provides spatial interpolation for unobserved monitoring stations.  
-An innovative **Cyclic Encoding (CE)** technique is also introduced to ensure continuous time representation, overcoming issues with discrete time boundaries.
-
-The project focuses on **PM2.5 analysis using data collected in northern China (2013–2017)**.  
-Extensive experiments have demonstrated that AQ-Net is robust in capturing both **short-term (6–24 hours)** and **long-term (up to 7 days)** pollutant trends, making it a valuable tool for environmental reanalysis, public health alerts, and policy decisions.
-![Description de l'image](img/mapB.png)
 
 ---
 
-## Key Features
+## 🗺 Spatial Reanalysis of PM2.5 Across China
 
-- **Hybrid Model Architecture**  
-  - **LSTM + Multi-Head Attention:** Captures long-term temporal dependencies and selectively weights critical time steps.  
-  - **Cyclic Encoding (CE):** Projects time-related features into a continuous 2D sinusoid space to avoid discontinuities.  
-    ![CE](img/cyclic_encoding.gif)  
-  - **Neural kNN Interpolation:** Fills spatial gaps by interpolating features from observed stations to unobserved ones.
+<p align="center">
+  <img src="img/mapc.png" alt="China-wide Reanalysis Map" width="49%"/>
+  <img src="img/mapC.gif" alt="Beijing Zoomed View" width="49%"/>
+</p>
 
-- **Robust Reanalysis**  
-  Designed to reconstruct historical air pollution levels even in regions with sparse sensor coverage, ensuring both spatial and temporal consistency.
-
-- **Comprehensive Evaluation**  
-  The model has been quantitatively and qualitatively evaluated against traditional methods (e.g., LSTM, linear regression, and PatchTST), showing improved performance in terms of MAE, RMSE, and R² scores.
+This map shows the reanalysis of PM2.5 levels across all stations used in our study, whether visible or hidden.  
+The color indicates the PM2.5 concentration (from dark purple to yellow), and the size of the circles reflects the relative intensity.  
+The zoom on Beijing highlights how dense the sensor network is in certain urban regions.
 
 ---
 
-## Overall Architecture
+## 📘 Overview
 
-![Description de l'image](img/Artboard11.jpg)
+**AQ-Net** is a deep learning model for spatiotemporal air quality reanalysis, focused on **PM2.5 estimation across Northern China (2013–2017)**.
+
+Key components:
+- **LSTM + Multi-Head Attention** for temporal modeling.
+- **Neural kNN module** for spatial interpolation.
+- **Cyclic Encoding** for robust continuous time representation.
+
+✅ Proven performance across:
+- **Short-term (6–24h)** and  
+- **Long-term (up to 7 days)** horizons.  
+
+Ideal for environmental assessment, public health alerts, and policy development.
+
+<p align="center">
+  <img src="img/mapB.png" alt="PM2.5 Time Trends"/>
+</p>
+
 ---
 
-## Installation
+## 🚀 Key Features
 
-1. **Clone the repository:**
+### 🔁 Hybrid Model Architecture
+- **LSTM + Multi-Head Attention**: Captures long-term dependencies & focuses on key time steps.  
+- **Cyclic Encoding (CE)**: Projects time into 2D sinusoidal space.  
+  <img src="img/cyclic_encoding.gif" width="400"/>  
+- **Neural kNN**: Learns to interpolate spatial features for unobserved stations.
 
-   ```bash
-   git clone https://github.com/AmmarKheder/AQ-Net.git
-   cd AQ-Net
-2. **Install dependencies:**
-   pip install -r requirements.txt
+### 🧪 Robust Reanalysis
+- Handles **sparse sensor networks**.
+- Maintains **spatial + temporal consistency**.
 
-3. **Usage**
-Run the main script to execute the entire pipeline:
-  python main.py
-This will:
-	1.	Load and preprocess the data (filtering, normalization, etc.).
-	2.	Split the dataset into training, validation, and test sets.
-	3.	Create PyTorch datasets and data loaders.
-	4.	Define and train the AQ-Net model (LSTM + Attention + neural kNN).
-	5.	Evaluate the model (MAE, RMSE, R²).
-	6.	Visualize spatial predictions for unobserved stations.
+### 📊 Comprehensive Evaluation
+- Outperforms LSTM, Linear Regression, and PatchTST.  
+- Metrics: **MAE**, **RMSE**, **R²**.
 
+---
 
+## 🧬 Model Architecture
+
+<p align="center">
+  <img src="img/Artboard11.jpg" alt="AQ-Net Architecture" width="80%"/>
+</p>
+
+---
+
+## ⚙️ Installation & Usage
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/AmmarKheder/AQ-Net.git
+cd AQ-Net
